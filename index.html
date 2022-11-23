@@ -4,7 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
   
   <title>Frontend Mentor | Interactive card details form</title>
 
@@ -15,6 +21,38 @@
   </style>
 </head>
 <body>
+  <div class="container">
+
+    <div class="container_card">
+      <img class="card_front" src="./images/bg-card-front.png" alt="frente-do-cartão">
+      <img class="card_back" src="./images/bg-card-back.png" alt="verso-do-cartão" >
+
+    </div>
+
+
+    <div class="container_form">
+      <div class=" box-form">
+        <label for="name">Cardholder name</label>
+        <input type="text" name="name" id="name" placeholder="e.g. Jane Appleseed">
+      </div>
+      <div class=" box-form">
+        <label for="name">Card Number</label>
+        <input type="text" name="name" id="name" placeholder="e.g. e.g. 1234 5678 9123 0000">
+      </div>
+      <div >
+          <div class=" box-form">
+            <label for="name"> Exp. Date (MM/YY)</label>
+            <input type="text" name="name" id="name" placeholder="MM">
+            <input type="text" name="name" id="name" placeholder="YY">
+          </div>
+          <div class=" box-form">
+            <label for="name">CVC</label>
+            <input type="text" name="name" id="name" placeholder="e.g. 123">
+          </div>
+      </div>
+      <button type="submit">Confirm</button>
+    </div>
+  </div>
 
   0000 0000 0000 0000
   Jane Appleseed
@@ -22,20 +60,16 @@
 
   000
 
-  Cardholder Name
-  e.g. Jane Appleseed
+  
 
-  Card Number
-  e.g. 1234 5678 9123 0000
+  
+  
 
-  Exp. Date (MM/YY)
-  MM
-  YY
 
-  CVC
-  e.g. 123
+  
+  
 
-  Confirm
+
 
   <!-- Completed state start -->
 
